@@ -1,0 +1,25 @@
+.contact{
+    margin: auto;
+    text-align: center;
+    padding:15px;
+    margin:15px;
+    background: linear-gradient(toleft,blue,gray);
+
+}
+input{
+    border: solid 2px black;
+    padding: 13px;
+    margin: 13px;
+
+}
+button{
+    padding: 10px;
+    margin: 10px;
+    color: black;
+    font-weight: 900;
+
+}
+button:hover{
+    background-color: black;
+
+}

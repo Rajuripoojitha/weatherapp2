@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "rZzqswJwdzjdM84dY",
+      });
+   })();
+</script>
+    <div class="contact">
+        
+            <div>
+                <input id="name" type="text" placeholder="enter your name">
+            </div>
+            <div>
+                <input id="mobile" type="text" placeholder="enter your mobile">
+            </div>
+            <div>
+                <input id="Email" type="text" placeholder="enter your Email">
+            </div>
+            <div>
+                <input id="location" type="text" placeholder="enter your location">
+            </div>
+            <div>
+                <button onclick="sendMail()" type="submit">contact us</button>
+            </div>
+        </div>
+    <script src="{% static 'script2.js' %}"> </script>
+</body>
+</html>
